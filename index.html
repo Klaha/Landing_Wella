@@ -7,6 +7,21 @@
 <meta name="description" content="Web oficial de Wella Professionals Venezuela. Descubre las novedades y las últimas tendencias del mundo del estilismo profesional.">
 <meta name="keywords" content="Estilismo, estilista, estilistas, coloración, cabello, coloración del cabello, cuidado del cabello, tendencias, estilo, color capilar, belleza, trend vision, Wella">
 <link href="style/style.css" rel="stylesheet" type="text/css">
+
+<script>	
+function cambio(img){
+    document.getElementById('imgHover').src=img;
+}
+
+function cambio2(img){
+    document.getElementById('imgHover2').src=img;
+}
+
+function cambio3(img){
+    document.getElementById('imgHover3').src=img;
+}
+</script>
+
 </head>
 <body>
 <script type="text/javascript">
@@ -20,24 +35,24 @@
                 imagenes[4] = "echo.jpg";
         document.body.style.backgroundImage = "url(" + dir + imagenes[azar] + ")";
 </script>
-        <div class="contenedor">
-            <div class="contenedor_landing">
-                <div class="logo_wella">
-                    <img src="img/wella_logo.png" alt="Wella Logo">
-                </div>
-                <div class="texto_1">
-                    <img src="img/texto_1.png" alt="">
-                </div>
-                <div class="texto_2">
-                    <img src="img/texto_2a.png" alt="">
-                    <img src="img/texto_2b.png" alt="">
-                </div>
-                <div class="botones">
-                    <a href="https://twitter.com/WellaVenezuela" target="_blank"><img src="img/twitter.png" alt="Twitter"></a>
-                    <a href="http://www.facebook.com/WellaProfessionalsVzla" target="_blank"><img src="img/facebook.png" alt="Facebook" class="button"></a>
-                    <a href="http://www.youtube.com/user/wellavzla/" target="_blank"><img src="img/youtube.png" alt="Youtube"></a>
-                </div>
+    <div class="contenedor">
+        <div class="contenedor_landing">
+            <div class="logo_wella">
+                <img src="img/wella_logo.png" alt="Wella Logo">
+            </div>
+            <div class="texto_1">
+                <img src="img/texto_1.png" alt="">
+            </div>
+            <div class="texto_2">
+                <img src="img/texto_2a.png" alt="">
+                <img src="img/texto_2b.png" alt="">
+            </div>
+            <div class="botones">
+                <a href="https://twitter.com/WellaVenezuela" target="_blank"><img src="img/twitter.png" alt="Twitter" id="imgHover" onmouseover="cambio('img/twitter_hover.png')" onmouseout="cambio('img/twitter.png')"></a>
+                <a href="http://www.facebook.com/WellaProfessionalsVzla" target="_blank"><img src="img/facebook.png" alt="Facebook" class="button" id="imgHover2" onmouseover="cambio2('img/facebook_hover.png')" onmouseout="cambio2('img/facebook.png')"></a>
+                <a href="http://www.youtube.com/user/wellavzla/" target="_blank"><img src="img/youtube.png" alt="Youtube" id="imgHover3" onmouseover="cambio3('img/youtube_hover.png')" onmouseout="cambio3('img/youtube.png')"></a>
             </div>
         </div>
+    </div>
 </body>
 </html>
